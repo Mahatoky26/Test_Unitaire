@@ -1,0 +1,2 @@
+Il se passe qu'il y a erreur de test avec assertTrue(expected.equals(result)) et renvoie "java.lang.AssertionError" 
+Pour l'expliquer : les  objets expected et result non sont pas egaux d'apres le test 
