@@ -1,0 +1,2 @@
+Il se passe que le test a échoué car assertEquals(m12CHF, new Money(12, "CHF")) renvoie false on voie alor que les deux objets ne sont pas egaux
+Il y a manque du methode equals() dans la classe Money
