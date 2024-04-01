@@ -1,6 +1,21 @@
 package fr.emse.test;
 
+import java.util.Objects;
+
 public class Money {
+	@Override
+	public boolean equals(Object obj) {
+	    if (this == obj) {
+	        return true;
+	    }
+	    if (obj == null || getClass() != obj.getClass()) {
+	        return false;
+	    }
+	    
+	    Money other = (Money) obj;
+	    
+	    return fAmount == other.fAmount && Objects.equals(fCurrency, other.fCurrency);
+	}
 	private int fAmount;
 	private String fCurrency;
 	public Money(int amount, String currency) {
